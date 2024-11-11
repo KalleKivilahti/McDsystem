@@ -1,0 +1,50 @@
+[
+    {
+        "order_id": "ORD001",
+        "status": "Pending",
+        "items": [
+            {
+                "name": "Cheeseburger",
+                "quantity": 1,
+                "customizations": ["Extra Cheese", "No Pickles"]
+            },
+            {
+                "name": "Fries",
+                "quantity": 2,
+                "customizations": []
+            }
+        ]
+    },
+    {
+        "order_id": "ORD002",
+        "status": "Pending",
+        "items": [
+            {
+                "name": "McChicken",
+                "quantity": 1,
+                "customizations": ["Lettuce Only"]
+            },
+            {
+                "name": "Soft Drink",
+                "quantity": 1,
+                "customizations": ["No Ice"]
+            }
+        ]
+    },
+    {
+        "order_id": "ORD003",
+        "status": "Pending",
+        "items": [
+            {
+                "name": "Big Mac",
+                "quantity": 1,
+                "customizations": ["Extra Sauce"]
+            },
+            {
+                "name": "Fries",
+                "quantity": 1,
+                "customizations": []
+            }
+        ]
+    }
+]

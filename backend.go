@@ -20,16 +20,17 @@ type Order struct {
 }
 
 var orders []Order
-var mu sync.Mutex
+var mu sync.Mutex // mutex lock prevents goroutines accessing same data same time
 
 func worker(id int, orders <-chan *Order, wg *sync.WaitGroup) {
 	defer wg.Done()
-	for order := range orders {
-		mu.Lock()
-		order.Status = "processing"
-		mu.Unlock()
-
-		time.Sleep(2 * time.Second)
+	if id != 0 {
+		for order := range orders {
+			mu.Lock()
+			defer mu.Unlock()
+			order.Status = "pending"
+			time.Sleep(1 * time.Second)
+		}
 	}
 }
 
@@ -37,6 +38,7 @@ func ServeOrders(w http.ResponseWriter, r *http.Request) {
 	mu.Lock()
 	defer mu.Unlock()
 
+	// states to HTTP response header the format is JSON
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(orders)
 }
@@ -62,7 +64,7 @@ func CompleteOrder(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 }
 
-// data to Order struct
+// formta data to Order struct
 func LoadOrders(filename string) ([]Order, error) {
 	data, err := os.ReadFile(filename)
 	if err != nil {

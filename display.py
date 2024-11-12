@@ -1,6 +1,5 @@
 import pygame
 import requests
-import json
 import multiprocessing
 
 def load_orders():

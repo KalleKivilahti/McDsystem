@@ -6,12 +6,14 @@
             {
                 "name": "Cheeseburger",
                 "quantity": 1,
-                "customizations": ["Extra Cheese", "No Pickles"]
+                "customizations": ["Extra Cheese", "No Pickles"],
+                "category": "food"
             },
             {
                 "name": "Fries",
                 "quantity": 2,
-                "customizations": []
+                "customizations": [],
+                "category": "food"
             }
         ]
     },
@@ -22,12 +24,14 @@
             {
                 "name": "McChicken",
                 "quantity": 1,
-                "customizations": ["Lettuce Only"]
+                "customizations": ["Lettuce Only"],
+                "category": "food"
             },
             {
                 "name": "Soft Drink",
                 "quantity": 1,
-                "customizations": ["No Ice"]
+                "customizations": ["No Ice"],
+                "category": "drink"
             }
         ]
     },
@@ -38,12 +42,14 @@
             {
                 "name": "Big Mac",
                 "quantity": 1,
-                "customizations": ["Extra Sauce"]
+                "customizations": ["Extra Sauce"],
+                "category": "food"
             },
             {
                 "name": "Fries",
                 "quantity": 1,
-                "customizations": []
+                "customizations": [],
+                "category": "food"
             }
         ]
     }

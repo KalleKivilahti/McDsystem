@@ -16,6 +16,7 @@ type Order struct {
 		Name           string   `json:"name"`
 		Quantity       int      `json:"quantity"`
 		Customizations []string `json:"customizations,omitempty"`
+		Category       string   `json:"category"`
 	} `json:"items"`
 }
 
@@ -64,7 +65,7 @@ func CompleteOrder(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 }
 
-// formta data to Order struct
+// format data to Order struct
 func LoadOrders(filename string) ([]Order, error) {
 	data, err := os.ReadFile(filename)
 	if err != nil {

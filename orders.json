@@ -1,56 +1,98 @@
 [
     {
-        "order_id": "ORD001",
-        "status": "Pending",
-        "items": [
-            {
-                "name": "Cheeseburger",
-                "quantity": 1,
-                "customizations": ["Extra Cheese", "No Pickles"],
-                "category": "food"
-            },
-            {
-                "name": "Fries",
-                "quantity": 2,
-                "customizations": [],
-                "category": "food"
-            }
-        ]
+      "order_id": "ORD001",
+      "status": "pending",
+      "items": [
+        {
+          "name": "Cheeseburger",
+          "quantity": 1,
+          "customizations": ["Extra Cheese", "No Pickles"],
+          "category": "food",
+          "confirmed": false
+        },
+        {
+          "name": "Fries",
+          "quantity": 2,
+          "category": "food",
+          "confirmed": false
+        }
+      ]
     },
     {
-        "order_id": "ORD002",
-        "status": "Pending",
-        "items": [
-            {
-                "name": "McChicken",
-                "quantity": 1,
-                "customizations": ["Lettuce Only"],
-                "category": "food"
-            },
-            {
-                "name": "Soft Drink",
-                "quantity": 1,
-                "customizations": ["No Ice"],
-                "category": "drink"
-            }
-        ]
+      "order_id": "ORD002",
+      "status": "pending",
+      "items": [
+        {
+          "name": "Veggie Burger",
+          "quantity": 1,
+          "customizations": ["No Mayo"],
+          "category": "food",
+          "confirmed": false
+        },
+        {
+          "name": "Coke",
+          "quantity": 1,
+          "category": "drink",
+          "confirmed": false
+        }
+      ]
     },
     {
-        "order_id": "ORD003",
-        "status": "Pending",
-        "items": [
-            {
-                "name": "Big Mac",
-                "quantity": 1,
-                "customizations": ["Extra Sauce"],
-                "category": "food"
-            },
-            {
-                "name": "Fries",
-                "quantity": 1,
-                "customizations": [],
-                "category": "food"
-            }
-        ]
+      "order_id": "ORD003",
+      "status": "pending",
+      "items": [
+        {
+          "name": "Chicken Sandwich",
+          "quantity": 1,
+          "customizations": ["Spicy"],
+          "category": "food",
+          "confirmed": false
+        },
+        {
+          "name": "Lemonade",
+          "quantity": 1,
+          "category": "drink",
+          "confirmed": false
+        }
+      ]
+    },
+    {
+      "order_id": "ORD004",
+      "status": "pending",
+      "items": [
+        {
+          "name": "Double Cheeseburger",
+          "quantity": 2,
+          "customizations": ["Extra Pickles"],
+          "category": "food",
+          "confirmed": false
+        },
+        {
+          "name": "Orange Juice",
+          "quantity": 1,
+          "category": "drink",
+          "confirmed": false
+        }
+      ]
+    },
+    {
+      "order_id": "ORD005",
+      "status": "pending",
+      "items": [
+        {
+          "name": "Fish Sandwich",
+          "quantity": 1,
+          "customizations": ["No Tartar Sauce"],
+          "category": "food",
+          "confirmed": false
+        },
+        {
+          "name": "Iced Tea",
+          "quantity": 1,
+          "category": "drink",
+          "confirmed": false
+        }
+      ]
     }
-]
+  ]
+  
